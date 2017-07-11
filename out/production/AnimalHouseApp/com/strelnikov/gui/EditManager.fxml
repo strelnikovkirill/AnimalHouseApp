@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.strelnikov.gui.EditManagerController">
+    <children>
+        <Button fx:id="addButton" layoutX="40.0" layoutY="228.0" mnemonicParsing="false" onAction="#addAnimal" prefHeight="25.0" prefWidth="59.0" text="Add" />
+        <Label layoutX="180.0" layoutY="39.0" text="Edit manager">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="editButton" layoutX="380.0" layoutY="228.0" mnemonicParsing="false" onAction="#editAnimal" prefHeight="25.0" prefWidth="59.0" text="Edit" />
+        <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMenu" text="&lt;&lt; Back" />
+        <TextField fx:id="idTextField" layoutX="177.0" layoutY="98.0" prefHeight="25.0" prefWidth="262.0" promptText="Enter animal id" />
+        <Label layoutX="41.0" layoutY="102.0" text="ID:" />
+        <Label layoutX="42.0" layoutY="154.0" text="Animal Parameters:" />
+        <TextField fx:id="parametersTextField" layoutX="177.0" layoutY="150.0" prefHeight="25.0" prefWidth="262.0" promptText="Enter animal parameters" />
+        <Button fx:id="removeButton" layoutX="215.0" layoutY="228.0" mnemonicParsing="false" onAction="#removeAnimal" text="Remove" />
+        <Label layoutX="40.0" layoutY="284.0" prefHeight="25.0" prefWidth="381.0" text="If you want add new item, then entering only animal parameters field." />
+        <Text fx:id="statusText" fill="RED" layoutX="84.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="381.0" />
+        <Label layoutX="40.0" layoutY="370.0" text="Status" />
+        <Label layoutX="40.0" layoutY="309.0" prefHeight="25.0" prefWidth="381.0" text="If you want remove item, then entering only id field." />
+        <Label layoutX="40.0" layoutY="334.0" prefHeight="25.0" prefWidth="381.0" text="If you want edit item, then entering all fields." />
+        <Label layoutX="41.0" layoutY="182.0" prefHeight="25.0" prefWidth="301.0" text="Example: &quot;48,Paggy,dog,6,poodle,Jam 128647,no,1900&quot;" textFill="RED" />
+        <Label layoutX="41.0" layoutY="123.0" prefHeight="25.0" prefWidth="301.0" text="Example: &quot;48&quot;" textFill="RED" />
+    </children>
+</AnchorPane>
